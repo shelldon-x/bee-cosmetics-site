@@ -231,16 +231,15 @@
     .results-head .title-lg { max-width: 11ch; }
     .results-head .lead { max-width: 880px; }
     .results-mark {
-      width:100%; min-height:220px; border-radius:28px;
-      background:
-        radial-gradient(circle at 50% 50%, rgba(199,154,50,.09), rgba(255,255,255,.52) 52%, transparent 84%),
-        linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,.18));
+      width:100%; min-height:260px; border-radius:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.74), rgba(255,252,246,.52));
       border:1px solid rgba(199,154,50,.10);
       display:flex; align-items:center; justify-content:center;
-      overflow:hidden;
+      overflow:hidden; padding:18px;
     }
     .results-mark img {
-      width:min(330px, 68%); opacity:.13; filter:grayscale(100%) contrast(1.02);
+      width:min(440px, 84%); max-width:100%; max-height:240px; height:auto; object-fit:contain;
+      opacity:1; filter:none; mix-blend-mode:normal;
     }
     .info-list { display:grid; gap:14px; margin-top:18px; }
     .info-item { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:start; }
@@ -624,7 +623,7 @@
         <img class="brand-logo" src="logos/bee-logo-official.svg" alt="Bee Cosmetics" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
         <strong class="brand-fallback">Bee Cosmetics</strong>
         <span class="brand-text">
-          <small>Cuidado premium para cabelos com curvatura</small>
+          <small>Premium Hair Care</small>
         </span>
       </a>
 
@@ -879,8 +878,7 @@
                 <li>Informe cidade, estado e estrutura do negócio para facilitar a continuidade da conversa.</li>
                 <li>Descreva o estágio do interesse: conhecer a linha, receber catálogo, condições comerciais ou implantação.</li>
               </ul>
-              <div class="contact-inline">E-mail comercial: <strong>contato@beecosmetics.store</strong></div>
-            </article>
+</article>
 
             <div class="b2b-panel">
               <span class="eyebrow" style="color:#f2d48f;">Formulário B2B</span>
@@ -1043,16 +1041,19 @@
           <p>Você será direcionada para uma loja parceira oficial da Bee Cosmetics.</p>
         </div>
         <div class="market-list">
-          <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="mercado-livre">
-            <span class="market-icon"><img src="icons/mercado-livre.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>ML</span>'"></span>
-            <div><strong>Mercado Livre</strong><small>Compra rápida</small></div>
-            <span class="btn btn-primary">Ir</span>
-          </a>
+
           <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="amazon">
             <span class="market-icon"><img src="icons/amazon.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>AM</span>'"></span>
             <div><strong>Amazon</strong><small>Checkout prático</small></div>
             <span class="btn btn-primary">Ir</span>
           </a>
+
+          <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="mercado-livre">
+            <span class="market-icon"><img src="icons/mercado-livre.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>ML</span>'"></span>
+            <div><strong>Mercado Livre</strong><small>Compra rápida</small></div>
+            <span class="btn btn-primary">Ir</span>
+          </a>
+
           <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="shopee">
             <span class="market-icon"><img src="icons/shopee.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>SP</span>'"></span>
             <div><strong>Shopee</strong><small>Mais uma opção</small></div>
@@ -1085,9 +1086,9 @@
     ];
 
     const MARKET_LINKS = {
-      'mercado-livre': '#',
-      'amazon': '#',
-      'shopee': '#'
+      'mercado-livre': 'https://www.mercadolivre.com.br/',
+      'amazon': 'https://www.amazon.com.br/s?me=APT6H1P1PWJY4&marketplaceID=A2Q3Y263D00KWC',
+      'shopee': 'https://shopee.com.br/'
     };
 
     const productsGrid = document.getElementById('productsGrid');
