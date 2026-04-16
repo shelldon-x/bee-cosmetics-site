@@ -1,21 +1,36 @@
-# Bee Cosmetics Site
+# Bee Cosmetics Store
 
-Estrutura pronta para GitHub + Vercel.
+Site oficial da Bee Cosmetics.
 
-## Pastas
+## Produção
+- Domínio: https://beecosmetics.store
+- Deploy: Vercel
+
+## Stack
+- HTML
+- CSS
+- JavaScript
+- Vercel
+
+## Arquivos principais
 - `index.html`
-- `logos/`
-- `products/`
-- `results/`
-- `icons/`
-- `og/`
-- `misc/`
 - `robots.txt`
 - `sitemap.xml`
-- `site.webmanifest`
 - `vercel.json`
+- `site.webmanifest`
 
-## Antes de publicar
-- atualizar links dos marketplaces
-- atualizar número do WhatsApp no script
-- substituir placeholders por assets finais
+## Estrutura esperada
+- `/logos`
+- `/products`
+- `/results`
+- `/icons`
+- `/og`
+
+## Favicons e ícones usados pelo HTML
+- `/favicon.ico`
+- `/icons/favicon-16x16.png`
+- `/icons/favicon-32x32.png`
+- `/icons/apple-touch-icon.png`
+
+## Observação
+Analytics será adicionado depois.
