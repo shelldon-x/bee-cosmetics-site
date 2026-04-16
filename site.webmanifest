@@ -1,0 +1,21 @@
+{
+  "name": "Bee Cosmetics",
+  "short_name": "Bee",
+  "description": "Catálogo premium para cabelos com curvatura.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3ebdc",
+  "theme_color": "#c79a32",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

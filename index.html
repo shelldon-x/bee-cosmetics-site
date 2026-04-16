@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bee Cosmetics | Catálogo premium para cabelos com curvatura</title>
+  <meta name="description" content="Conheça a Bee Cosmetics: 10 produtos veganos, ricos em ingredientes naturais, livres de sulfato, parabenos, petrolato, parafina e corantes. Uma vitrine premium para cabelos ondulados, cacheados e crespos com foco em saúde do fio.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#c79a32">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://beecosmetics.store">
+  <meta property="og:title" content="Bee Cosmetics | Catálogo premium para cabelos com curvatura">
+  <meta property="og:description" content="Produtos veganos, ricos em ingredientes naturais e pensados para a saúde dos fios com curvatura.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beecosmetics.store">
+  <meta property="og:image" content="https://beecosmetics.store/og/og-home-bee.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bee Cosmetics | Catálogo premium">
+  <meta name="twitter:description" content="Uma vitrine educativa para cabelos com curvatura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3ebdc;
+      --bg-soft: #fbf7f0;
+      --surface: rgba(255,255,255,.94);
+      --surface-2: #fffdf9;
+      --text: #17120d;
+      --text-soft: #3e3528;
+      --muted: #665b4b;
+      --gold: #c59a3d;
+      --gold-2: #e0be73;
+      --gold-soft: #efe3c4;
+      --gold-deep: #6b4a11;
+      --line: rgba(23,18,13,.10);
+      --line-2: rgba(23,18,13,.18);
+      --black: #111111;
+      --white: #ffffff;
+      --radius-xs: 14px;
+      --radius-sm: 20px;
+      --radius-md: 28px;
+      --radius-lg: 36px;
+      --radius-xl: 48px;
+      --shadow-sm: 0 16px 36px rgba(17, 12, 0, .09);
+      --shadow-md: 0 28px 76px rgba(17, 12, 0, .14);
+      --shadow-lg: 0 52px 132px rgba(17, 12, 0, .18);
+      --container: 1240px;
+      --header-h: 78px;
+      --ease: cubic-bezier(.22,1,.36,1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(199,161,74,.11), transparent 28%),
+        radial-gradient(circle at 100% 0%, rgba(224,190,116,.08), transparent 22%),
+        linear-gradient(180deg, #fdfbf8 0%, var(--bg) 40%, #f1e8d8 100%);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    ::selection { background:rgba(199,154,50,.22); color:#17120d; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior:auto; }
+      *, *::before, *::after { animation:none !important; transition:none !important; }
+    }
+    body.modal-open { overflow:hidden; position:fixed; width:100%; }
+    img { display:block; max-width:100%; height:auto; }
+    a { color:inherit; text-decoration:none; }
+    button, input, select, textarea { font:inherit; }
+    button { border:0; background:none; cursor:pointer; }
+    input, select, textarea {
+      width:100%; min-height:54px; border-radius:18px; border:1px solid rgba(0,0,0,.14);
+      background:rgba(255,255,255,.98); color:var(--text); padding:0 16px; appearance:none; -webkit-appearance:none;
+      transition:border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    textarea { min-height:130px; resize:vertical; padding:16px; }
+    input:focus, select:focus, textarea:focus {
+      outline:none; border-color:rgba(199,154,50,.8); background:#fff; box-shadow:0 0 0 4px rgba(199,154,50,.12);
+    }
+    :focus-visible { outline:2px solid var(--gold); outline-offset:3px; border-radius:12px; }
+    .skip-link {
+      position:fixed; top:-100px; left:16px; z-index:9999; background:#fff; color:#000;
+      padding:12px 16px; border-radius:12px; box-shadow:var(--shadow-md);
+    }
+    .skip-link:focus { top:16px; }
+    .container { width:min(calc(100% - 32px), var(--container)); margin-inline:auto; }
+    .desktop-only { display:none !important; }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:10px; font-size:.74rem; letter-spacing:.18em;
+      font-weight:800; text-transform:uppercase; color:var(--gold-deep);
+    }
+    .eyebrow::before {
+      content:''; width:8px; height:8px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 5px rgba(199,154,50,.14);
+    }
+    .title-xl, .title-lg, .title-md { font-family:'Cormorant Garamond', serif; font-weight:700; letter-spacing:-.04em; }
+    .title-xl { font-size:clamp(3rem, 11vw, 6.2rem); line-height:.9; }
+    .title-lg { font-size:clamp(2.25rem, 7vw, 4.1rem); line-height:.95; }
+    .title-md { font-size:clamp(1.7rem, 5vw, 2.55rem); line-height:1; }
+    .lead { font-size:1rem; line-height:1.82; color:var(--text-soft); }
+    .section { padding:72px 0; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:50px; padding:0 22px;
+      border-radius:999px; font-weight:700; transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+    }
+    .btn:hover { transform:translateY(-2px); }
+    .btn-primary {
+      background:linear-gradient(180deg, var(--gold-2) 0%, var(--gold) 100%); color:#17120a; box-shadow:0 16px 30px rgba(199,154,50,.23);
+    }
+    .btn-secondary { background:rgba(255,255,255,.94); color:var(--text); border:1px solid rgba(0,0,0,.08); }
+    .btn-dark { background:#111; color:#fff; box-shadow:0 14px 30px rgba(0,0,0,.14); }
+    .pill-row { display:flex; flex-wrap:wrap; gap:10px; }
+    .pill {
+      display:inline-flex; align-items:center; justify-content:center; min-height:34px; padding:0 12px; border-radius:999px;
+      background:#f6eed7; color:#674b12; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; font-weight:800;
+    }
+    .pill.ghost { background:rgba(0,0,0,.04); color:var(--text-soft); }
+
+    .header {
+      position:fixed; inset:0 0 auto 0; z-index:100;
+      background:linear-gradient(180deg, rgba(255,253,248,.96) 0%, rgba(247,240,226,.92) 100%);
+      backdrop-filter:blur(18px); border-bottom:1px solid rgba(98,72,16,.12);
+      box-shadow:0 14px 34px rgba(17,12,0,.10), inset 0 -1px 0 rgba(255,255,255,.52);
+    }
+    .header-inner { min-height:var(--header-h); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .brand { display:flex; align-items:center; gap:14px; min-width:0; flex:1 1 auto; }
+    .brand-logo {
+      display:block; width:clamp(170px, 28vw, 250px); height:auto; max-height:58px; object-fit:contain; object-position:left center;
+      filter:drop-shadow(0 8px 18px rgba(17,12,0,.06));
+    }
+    .brand-fallback { display:none; font-size:.92rem; text-transform:uppercase; letter-spacing:.14em; }
+    .brand-text { min-width:0; display:grid; gap:3px; }
+    .brand-text small { display:block; font-size:.78rem; color:#5f5140; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:min(42vw, 320px); opacity:.96; }
+
+    .nav { display:none; }
+    .header-actions { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+    .menu-toggle {
+      width:46px; height:46px; border-radius:14px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:5px;
+      background:#fff; box-shadow:var(--shadow-sm);
+    }
+    .menu-toggle span { width:20px; height:2px; border-radius:999px; background:#111; transition:.28s; }
+    .menu-toggle.active span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .menu-toggle.active span:nth-child(2) { opacity:0; }
+    .menu-toggle.active span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    .mobile-panel {
+      display:none; position:fixed; inset:calc(var(--header-h) + 10px) 14px auto 14px; z-index:95; padding:18px; border-radius:30px;
+      background:linear-gradient(180deg, rgba(255,254,250,.985) 0%, rgba(248,241,227,.985) 100%);
+      border:1px solid rgba(140,106,26,.12); box-shadow:0 26px 70px rgba(17,12,0,.22), inset 0 1px 0 rgba(255,255,255,.65);
+      backdrop-filter:blur(22px);
+    }
+    .mobile-panel.open { display:block; animation:menuFade .22s ease; }
+    .mobile-panel::before {
+      content:''; position:absolute; inset:0 0 auto 0; height:1px;
+      background:linear-gradient(90deg, transparent, rgba(199,161,74,.48), transparent);
+    }
+    .mobile-panel nav { display:grid; gap:10px; }
+    .mobile-panel a {
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      min-height:58px; padding:0 18px; font-size:1rem; font-weight:800; color:#17130c;
+      border-radius:20px; background:rgba(255,255,255,.82); border:1px solid rgba(0,0,0,.06);
+      box-shadow:0 8px 20px rgba(17,12,0,.06);
+    }
+    .mobile-panel a::after {
+      content:'→'; font-size:1rem; color:var(--gold-deep); opacity:.92;
+    }
+    .mobile-panel a.btn {
+      justify-content:center; text-align:center; margin-top:4px; min-height:54px;
+      background:#111; color:#fff; box-shadow:0 18px 36px rgba(0,0,0,.18);
+    }
+    .mobile-panel a.btn::after { content:''; display:none; }
+    @keyframes menuFade {
+      from { opacity:0; transform:translateY(-8px) scale(.985); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+
+    main { padding-top:calc(var(--header-h) + 18px); }
+    .hero { padding-top:28px; }
+    .hero-grid { display:grid; gap:18px; }
+    .hero-copy { position:relative; z-index:2; padding-top:10px; }
+    .hero-signature { display:flex; align-items:center; min-height:28px; }
+    .hero-signature .eyebrow { color:var(--gold-deep); }
+    .hero-copy h1 em { color:var(--gold-deep); font-style:normal; }
+    .hero-actions { display:grid; gap:10px; margin-top:22px; }
+    .hero-card {
+      position:relative; overflow:hidden; min-height:540px; border-radius:38px; padding:26px; display:flex; flex-direction:column; justify-content:flex-end;
+      background:
+        radial-gradient(circle at 14% 14%, rgba(255,255,255,.32), transparent 24%),
+        radial-gradient(circle at 84% 18%, rgba(255,255,255,.10), transparent 18%),
+        linear-gradient(145deg, #111111 0%, #261f14 30%, #c7a14a 170%);
+      box-shadow:var(--shadow-lg); border:1px solid rgba(255,255,255,.14);
+      isolation:isolate;
+    }
+    .hero-watermark {
+      position:absolute; inset:-8% auto auto 50%; width:min(125vw, 960px); transform:translateX(-50%); opacity:.08; z-index:0; pointer-events:none; filter:drop-shadow(0 18px 58px rgba(0,0,0,.12));
+    }
+    .hero-watermark img { width:100%; height:auto; object-fit:contain; }
+    .hero-panel {
+      position:relative; z-index:1; border-radius:30px; padding:24px; background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.08)); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(16px);
+    }
+    .hero-panel h2 { color:#fff; }
+    .hero-panel p { color:rgba(255,255,255,.88); line-height:1.75; margin-top:12px; }
+    .hero-metrics { display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px; }
+    .metric {
+      min-height:112px; padding:16px; border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.06)); color:#fff; border:1px solid rgba(255,255,255,.11);
+    }
+    .metric strong { display:block; font-size:1.25rem; }
+    .metric span { display:block; margin-top:6px; font-size:.88rem; line-height:1.55; color:rgba(255,255,255,.80); }
+
+    .surface-card {
+      background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,252,246,.84)); border:1px solid rgba(16,16,16,.07); border-radius:34px; box-shadow:var(--shadow-sm); padding:26px; position:relative; overflow:hidden;
+    }
+    .surface-card::before {
+      content:''; position:absolute; inset:0 0 auto 0; height:1px; background:linear-gradient(90deg, transparent, rgba(199,161,74,.42), transparent);
+    }
+    .education-grid, .proof-grid, .guide-grid, .b2b-grid { display:grid; gap:18px; }
+    #resultados .surface-card { padding:34px; }
+    #resultados .surface-card .title-lg { max-width:12ch; }
+    .results-head {
+      display:grid; gap:18px; justify-items:start;
+    }
+    .results-copy {
+      display:grid; gap:0; min-width:0;
+    }
+    .results-head .title-lg { max-width: 11ch; }
+    .results-head .lead { max-width: 880px; }
+    .results-mark {
+      width:100%; min-height:220px; border-radius:28px;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(199,154,50,.09), rgba(255,255,255,.52) 52%, transparent 84%),
+        linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,.18));
+      border:1px solid rgba(199,154,50,.10);
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden;
+    }
+    .results-mark img {
+      width:min(330px, 68%); opacity:.13; filter:grayscale(100%) contrast(1.02);
+    }
+    .info-list { display:grid; gap:14px; margin-top:18px; }
+    .info-item { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:start; }
+    .info-item__num {
+      width:34px; height:34px; border-radius:50%; display:grid; place-items:center; background:#111; color:#fff; font-size:.84rem; font-weight:800; flex-shrink:0;
+    }
+    .info-item strong { display:block; font-size:.96rem; margin-bottom:5px; }
+    .info-item p { color:var(--text-soft); line-height:1.7; font-size:.95rem; }
+
+    .filter-bar { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    .filter-btn {
+      min-height:44px; padding:0 16px; border-radius:999px; background:#fff; border:1px solid var(--line); font-size:.77rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em;
+    }
+    .filter-btn.active, .filter-btn:hover { background:var(--gold); border-color:transparent; color:#16120a; }
+    .products-grid { display:grid; gap:18px; margin-top:24px; }
+    .product-card {
+      display:grid; gap:18px; padding:20px; border-radius:30px; background:linear-gradient(180deg, rgba(255,255,255,.94), rgba(255,252,246,.88)); border:1px solid rgba(0,0,0,.06); box-shadow:var(--shadow-sm);
+      transition:transform .26s var(--ease), box-shadow .26s var(--ease), border-color .26s var(--ease);
+      position:relative; overflow:hidden;
+    }
+    .product-card::before {
+      content:''; position:absolute; inset:0 auto auto 0; width:100%; height:1px; background:linear-gradient(90deg, transparent, rgba(199,161,74,.45), transparent);
+    }
+    .product-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:rgba(199,161,74,.24); }
+    .product-card .btn-dark, .product-card .btn-primary { transition:transform .22s ease, box-shadow .22s ease, filter .22s ease; }
+    .product-card:hover .btn-dark, .product-card:hover .btn-primary { transform:translateY(-1px); filter:saturate(1.03); }
+    .product-media {
+      position:relative; overflow:hidden; min-height:290px; border-radius:26px; background:radial-gradient(circle at top left, rgba(255,255,255,.78), transparent 28%), linear-gradient(180deg, #fbf2de 0%, #dec07b 100%); border:1px solid rgba(199,161,74,.18); box-shadow:inset 0 1px 0 rgba(255,255,255,.5);
+    }
+    .product-media img { width:100%; height:100%; object-fit:cover; object-position:center; }
+    .product-media.is-fallback img { display:none; }
+    .product-bottle {
+      position:absolute; left:18px; right:18px; bottom:18px; top:auto;
+      display:flex; align-items:flex-end; justify-content:flex-start; padding:0; pointer-events:none;
+    }
+    .product-media.is-fallback .product-bottle {
+      inset:18px; border-radius:20px; background:linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,255,255,.18)), linear-gradient(180deg, #f1d591 0%, #c8962c 100%);
+      display:grid; place-items:end start; padding:18px;
+    }
+    .product-bottle span {
+      display:inline-flex; padding:8px 12px; border-radius:999px; background:rgba(17,17,17,.72); color:#fff; font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em;
+      box-shadow:0 10px 22px rgba(17,12,0,.16);
+    }
+    .product-meta { font-size:.74rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:#87641d; }
+    .product-card h3 { font-size:1.72rem; line-height:1.02; letter-spacing:-.04em; font-family:'Cormorant Garamond', serif; }
+    .product-card p { color:var(--text-soft); line-height:1.8; font-size:.95rem; }
+    .product-footer { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+
+    .proof-grid { margin-top:22px; }
+    #resultados .proof-grid { display:grid; gap:18px; }
+    #resultados .results-intro { max-width:none; }
+    .ba-grid { display:grid; gap:22px; }
+    #resultados .surface-card { padding:30px; }
+    .ba-card {
+      padding:22px; border-radius:30px; background:linear-gradient(180deg, rgba(255,255,255,.97), rgba(255,252,246,.91));
+      border:1px solid rgba(0,0,0,.06); box-shadow:var(--shadow-sm);
+    }
+    .ba-card h3 { font-size:1.2rem; font-weight:800; }
+    .ba-card p { margin-top:8px; color:var(--text-soft); line-height:1.72; font-size:.95rem; max-width:30ch; }
+    .before-after {
+      position:relative; overflow:hidden; margin-top:18px; border-radius:26px; aspect-ratio:4/6.2; min-height:440px;
+      background:linear-gradient(180deg, #f6ecd7, #ddb862);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.55), 0 18px 34px rgba(17,12,0,.10);
+    }
+    .before-after.is-fallback::before{
+      content:'Imagem comparativa'; position:absolute; inset:0; display:grid; place-items:center;
+      font-weight:700; letter-spacing:.04em; color:rgba(58,39,0,.62); z-index:0;
+    }
+    .before-after img {
+      position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;
+      background:linear-gradient(180deg, rgba(255,255,255,.18), transparent);
+    }
+    .before-after img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; user-select:none; -webkit-user-drag:none; }
+    .before-after .after-wrap { position:absolute; inset:0; width:50%; overflow:hidden; }
+    .before-after .after-wrap img { width:100%; }
+    .before-after .divider { position:absolute; top:0; bottom:0; left:50%; width:2px; background:rgba(255,255,255,.92); transform:translateX(-50%); box-shadow:0 0 0 1px rgba(0,0,0,.08); }
+    .before-after .handle {
+      position:absolute; top:50%; left:50%; width:50px; height:50px; border-radius:50%; transform:translate(-50%, -50%);
+      display:grid; place-items:center; background:#fff; color:#111; box-shadow:0 12px 26px rgba(0,0,0,.16); font-size:.9rem; font-weight:800;
+    }
+    .before-after input[type=range] {
+      position:absolute; inset:0; width:100%; height:100%; appearance:none; background:transparent; border:0; padding:0; min-height:auto; cursor:ew-resize;
+    }
+    .before-after input[type=range]::-webkit-slider-thumb { appearance:none; width:50px; height:50px; opacity:0; }
+    .before-after input[type=range]::-moz-range-thumb { width:50px; height:50px; border:0; opacity:0; }
+    .ba-labels { position:absolute; inset:auto 12px 12px 12px; display:flex; justify-content:space-between; gap:10px; pointer-events:none; }
+    .ba-labels span {
+      display:inline-flex; padding:7px 10px; border-radius:999px; background:rgba(17,17,17,.72); color:#fff; font-size:.7rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em;
+    }
+
+    .guide-grid { margin-top:24px; }
+    .guide-card {
+      padding:24px; border-radius:30px; background:linear-gradient(160deg, #121212 0%, #1b1a18 34%, #2b2417 100%); color:#fff; position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.06); box-shadow:var(--shadow-sm);
+    }
+    .guide-card::before {
+      content:''; position:absolute; inset:auto -30px -50px auto; width:120px; height:120px; border-radius:50%; background:radial-gradient(circle, rgba(199,154,50,.36), transparent 70%);
+    }
+    .guide-card .step { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:#fff; color:#111; font-weight:800; }
+    .guide-card h3 { margin-top:16px; font-size:1.1rem; }
+    .guide-card p { margin-top:10px; color:rgba(255,255,255,.88); line-height:1.75; font-size:.92rem; }
+
+    .b2b-shell {
+      border-radius:38px; padding:26px; background:linear-gradient(145deg, #120f0b 0%, #231b11 34%, #b98a2d 182%); color:#fff; box-shadow:var(--shadow-lg); overflow:hidden; position:relative;
+    }
+    .b2b-shell::after {
+      content:''; position:absolute; inset:auto -12% -30% auto; width:260px; height:260px; border-radius:50%; background:radial-gradient(circle, rgba(255,255,255,.18), transparent 70%);
+    }
+    .b2b-grid { position:relative; z-index:1; }
+    .b2b-panel {
+      padding:22px; border-radius:24px; background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.08));
+      border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(12px); min-width:0; overflow:hidden;
+    }
+    .b2b-panel p, .b2b-panel li, .b2b-panel label { color:rgba(255,255,255,.88); }
+    .b2b-panel .muted-lite { color:rgba(255,255,255,.72); }
+    .b2b-points { display:grid; gap:12px; margin-top:18px; }
+    .b2b-points li { list-style:none; padding-left:18px; position:relative; line-height:1.68; }
+    .b2b-points li::before { content:'•'; position:absolute; left:0; color:#fff; }
+    .b2b-form { margin-top:20px; }
+    .form-grid { display:grid; gap:12px; min-width:0; }
+    .b2b-form label { display:block; margin-bottom:7px; font-size:.88rem; font-weight:700; }
+    .form-note { margin-top:10px; font-size:.82rem; color:rgba(255,255,255,.72); line-height:1.65; }
+
+    .faq-grid { display:grid; gap:14px; margin-top:24px; }
+    .faq-item {
+      border-radius:22px; background:rgba(255,255,255,.92); border:1px solid var(--line); box-shadow:var(--shadow-sm); padding:18px 20px;
+    }
+    .faq-item summary { list-style:none; cursor:pointer; font-weight:800; padding-right:28px; position:relative; }
+    .faq-item summary::-webkit-details-marker { display:none; }
+    .faq-item summary::after { content:'+'; position:absolute; right:0; top:-2px; font-size:1.4rem; line-height:1; color:var(--gold-deep); }
+    .faq-item[open] summary::after { content:'−'; }
+    .faq-item p { margin-top:14px; color:var(--text-soft); line-height:1.8; font-size:.94rem; }
+
+    .cta-final {
+      text-align:center; padding:34px 20px; border-radius:34px; background:linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(244,232,202,.98) 100%);
+      border:1px solid rgba(199,154,50,.16); box-shadow:var(--shadow-md);
+    }
+    .cta-final .actions { display:grid; gap:10px; margin-top:22px; }
+
+    .footer { padding:26px 0 40px; color:var(--muted); }
+    .footer-grid { display:grid; gap:18px; padding-top:22px; border-top:1px solid rgba(0,0,0,.08); }
+    .footer small { display:block; line-height:1.7; }
+
+    .modal {
+      position:fixed; inset:0; z-index:120; display:none; align-items:center; justify-content:center; padding:16px; background:rgba(10,10,10,.60); backdrop-filter:blur(12px);
+    }
+    .modal.open { display:flex; }
+    .modal-dialog {
+      width:min(100%, 560px); max-height:min(90vh, 780px); overflow:auto; border-radius:32px; background:linear-gradient(180deg, #fffefb 0%, #f8f1e2 100%);
+      border:1px solid rgba(255,255,255,.72); box-shadow:var(--shadow-lg); position:relative;
+    }
+    .modal-close {
+      position:sticky; top:14px; margin-left:auto; width:46px; height:46px; border-radius:50%; display:grid; place-items:center; background:#111; color:#fff; margin-top:14px; margin-right:14px; z-index:2;
+    }
+    .modal-content { padding:0 22px 26px; }
+    .market-minimal {
+      display:grid; gap:14px;
+    }
+    .market-header {
+      padding:8px 4px 12px; text-align:center;
+    }
+    .market-header p { margin-top:10px; color:var(--text-soft); line-height:1.75; font-size:1rem; }
+    .market-list { display:grid; gap:10px; margin-top:6px; }
+    .market-item {
+      display:grid; grid-template-columns:56px 1fr auto; gap:14px; align-items:center; padding:16px; border-radius:20px; background:#fff; border:1px solid rgba(23,18,13,.08); box-shadow:var(--shadow-sm);
+    }
+    .market-icon {
+      width:56px; height:56px; border-radius:16px; display:grid; place-items:center; background:#f7eed9; border:1px solid rgba(199,161,74,.18);
+    }
+    .market-icon img { width:30px; height:30px; object-fit:contain; }
+    .market-icon span { font-size:1.15rem; font-weight:800; color:#735611; }
+    .market-item strong { display:block; font-size:1rem; }
+    .market-item small { display:block; margin-top:2px; color:var(--text-soft); font-size:.9rem; }
+
+    .product-shot {
+      position:relative; overflow:hidden; min-height:320px; border-radius:24px; background:radial-gradient(circle at top left, rgba(255,255,255,.75), transparent 28%), linear-gradient(180deg, #fbf1db 0%, #e1be72 100%); border:1px solid rgba(199,154,50,.16);
+    }
+    .product-shot img { width:100%; height:100%; object-fit:cover; }
+    .product-shot.is-fallback img { display:none; }
+
+    .market-logo {
+      display:flex; justify-content:center; margin:4px 0 10px;
+    }
+    .market-logo img {
+      width:min(230px, 56vw); height:auto; object-fit:contain; filter:drop-shadow(0 8px 18px rgba(17,12,0,.05));
+    }
+    .market-brandline {
+      display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:8px;
+    }
+    .modal-dialog.market-dialog { box-shadow:0 40px 110px rgba(17,12,0,.24); }
+    .footer {
+      margin-top:12px;
+      background:linear-gradient(180deg, #111111 0%, #090909 100%);
+      color:#d9d1c4;
+      padding:40px 0 28px;
+    }
+    .footer-grid {
+      display:grid; gap:28px; padding-top:0; border-top:0; align-items:start;
+    }
+    .footer-brand {
+      display:grid; gap:14px; align-content:start;
+    }
+    .footer-brand img { width:min(168px, 42vw); height:auto; object-fit:contain; }
+    .footer-brand-fallback { display:none; font-size:1rem; letter-spacing:.14em; text-transform:uppercase; }
+    .footer-brand p { color:#b7ad9b; line-height:1.8; max-width:34ch; }
+    .footer-links {
+      display:grid; gap:18px;
+    }
+    .footer-col { display:grid; gap:10px; align-content:start; }
+    .footer-col h4 {
+      color:#fff; font-size:.82rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800;
+    }
+    .footer-col a, .footer-col span {
+      color:#b7ad9b; line-height:1.8; font-size:.98rem;
+    }
+    .footer-col a { transition:color .2s ease, transform .2s ease; }
+    .footer-col a:hover { color:#fff; transform:translateX(2px); }
+    .footer-bottom {
+      margin-top:24px; padding-top:18px; border-top:1px solid rgba(255,255,255,.08);
+      display:grid; gap:10px; color:#9f9482; font-size:.88rem;
+    }
+    .footer-bottom strong { color:#d7ccb9; font-weight:600; }
+    .contact-inline {
+      display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.14); margin-top:14px; font-size:.92rem; color:#fff;
+    }
+    .subtle-note { color:var(--text-soft); opacity:.92; }
+
+
+    #resultados .surface-card {
+      padding:34px 36px; border-radius:34px;
+    }
+    #resultados .surface-card .title-lg {
+      max-width:12ch;
+    }
+    #resultados .ba-grid {
+      margin-top:6px;
+    }
+
+    .product-modal-grid { display:grid; gap:18px; }
+    .spec-grid { display:grid; gap:10px; margin-top:16px; }
+    .spec {
+      padding:14px; border-radius:16px; background:#fff; border:1px solid rgba(0,0,0,.06);
+    }
+    .spec span { display:block; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:#8b6a24; }
+    .spec strong { display:block; margin-top:6px; font-size:.92rem; line-height:1.5; }
+    .detail-block { padding:18px; border-radius:20px; background:#fff; border:1px solid rgba(0,0,0,.06); }
+    .detail-block h3 { font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:#8a6720; margin-bottom:10px; }
+    .detail-block p { color:var(--text-soft); line-height:1.82; font-size:.94rem; white-space:pre-wrap; }
+
+
+        .result-empty {
+      display:flex; align-items:center; justify-content:center; min-height:100%; height:100%;
+      padding:18px; background:transparent;
+    }
+    .result-empty img {
+      display:block; width:min(100%, 320px); max-width:100%; max-height:180px; height:auto; object-fit:contain;
+      opacity:1; filter:none;
+    }
+
+@media (max-width: 390px) {
+      .header-inner { gap:10px; }
+      .brand { gap:8px; }
+      .brand-logo { width:144px; max-height:42px; }
+      .brand-text small { font-size:.68rem; max-width:132px; }
+      .title-xl { font-size:clamp(2.55rem, 15vw, 4rem); line-height:.94; }
+      .title-lg { font-size:clamp(2rem, 11vw, 3.05rem); line-height:.98; }
+      .hero-copy .lead { font-size:1rem; line-height:1.78; }
+      .btn { width:100%; justify-content:center; }
+      .product-card h3 { font-size:1.52rem; }
+      .market-header p { font-size:.96rem; }
+      .mobile-panel { inset:calc(var(--header-h) + 8px) 12px auto 12px; padding:14px; border-radius:24px; }
+      .mobile-panel a { min-height:54px; padding-inline:16px; border-radius:18px; font-size:.96rem; }
+      .b2b-shell { padding:14px; border-radius:28px; }
+      .b2b-panel { padding:16px; border-radius:20px; }
+      .b2b-panel .title-lg { font-size:clamp(1.9rem, 10vw, 2.55rem); }
+      .b2b-panel p, .b2b-panel li { font-size:.94rem; line-height:1.68; }
+      .b2b-form label { font-size:.84rem; }
+      input, select, textarea { min-height:50px; border-radius:16px; }
+      textarea { min-height:118px; }
+      .contact-inline { display:flex; width:100%; justify-content:flex-start; line-height:1.5; border-radius:18px; }
+      .form-note { font-size:.88rem; line-height:1.6; }
+      .result-empty img { width:min(100%, 240px); max-height:140px; }
+    }
+
+    @media (max-width: 479px) {
+      :root { --header-h: 78px; }
+      .container { width:min(calc(100% - 28px), var(--container)); }
+      .brand-logo { width:152px; max-height:44px; }
+      .brand-text small { max-width:150px; }
+      .btn { min-height:48px; }
+      .hero-card { min-height:auto; padding:22px; border-radius:32px; }
+      .hero-panel { padding:20px; }
+      .metric { min-height:auto; }
+      .surface-card { padding:24px 20px; border-radius:28px; }
+      .market-item { grid-template-columns:48px minmax(0,1fr) auto; gap:12px; padding:14px; }
+      .market-item .btn { min-width:0; padding-inline:16px; }
+      .market-item strong { font-size:1.02rem; }
+      .market-item small { font-size:.9rem; }
+      #resultados .surface-card { padding:26px 22px; }
+      .market-dialog { width:min(100%, 96vw); border-radius:28px; }
+      .market-minimal { padding:0 14px 18px; }
+      .market-header { padding-right:52px; }
+      .market-icon { width:48px; height:48px; border-radius:14px; }
+      .b2b-points { gap:10px; }
+      .b2b-points li { padding-left:16px; }
+      .form-grid.two { grid-template-columns:1fr; }
+    }
+    @media (min-width: 480px) {
+      .hero-metrics { grid-template-columns:repeat(2, 1fr); }
+    }
+    @media (max-width: 639px) {
+      .mobile-panel { max-height:calc(100dvh - var(--header-h) - 24px); overflow:auto; }
+      .mobile-panel nav { gap:12px; }
+      .hero-watermark { width:150vw; top:-4%; opacity:.13; }
+      .hero-metrics { grid-template-columns:1fr; }
+      .b2b-grid { grid-template-columns:1fr; }
+      .b2b-shell::after { width:180px; height:180px; opacity:.6; }
+      .b2b-panel select, .b2b-panel input, .b2b-panel textarea { font-size:16px; }
+      .b2b-form .btn { width:100%; }
+      .results-head { grid-template-columns:1fr; }
+      .results-mark { min-height:160px; }
+      .footer-links { grid-template-columns:1fr; }
+      .before-after { min-height:360px; aspect-ratio:4/5.5; }
+      .results-head .title-lg { max-width: 10ch; }
+    }
+    @media (min-width: 720px) {
+      .container { width:min(calc(100% - 44px), var(--container)); }
+      .hero-actions, .cta-final .actions { display:flex; flex-wrap:wrap; }
+      .education-grid, .proof-grid, .guide-grid, .b2b-grid { grid-template-columns:1fr 1fr; }
+      .ba-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+      .form-grid.two { grid-template-columns:1fr 1fr; }
+      .products-grid { grid-template-columns:1fr 1fr; }
+      .product-card { grid-template-columns:220px 1fr; align-items:stretch; }
+      .product-modal-grid { grid-template-columns:280px 1fr; align-items:start; }
+      .spec-grid { grid-template-columns:repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      :root { --header-h: 82px; }
+      .desktop-only { display:inline-flex !important; }
+      .container { width:min(calc(100% - 56px), var(--container)); }
+      .nav { display:flex; align-items:center; gap:24px; }
+      .brand-logo { width:220px; max-height:54px; }
+      .brand-text small { max-width:280px; }
+      .nav a { font-size:.78rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#5a4a33; }
+      .nav a { position:relative; transition:color .22s ease; }
+      .nav a::after {
+        content:''; position:absolute; left:0; right:0; bottom:-10px; height:2px; border-radius:999px;
+        background:linear-gradient(90deg, rgba(199,154,50,0), rgba(199,154,50,.9), rgba(199,154,50,0));
+        opacity:0; transform:translateY(4px); transition:opacity .22s ease, transform .22s ease;
+      }
+      .nav a:hover { color:#21180d; }
+      .nav a:hover::after, .nav a:focus-visible::after { opacity:1; transform:translateY(0); }
+      .header .btn-primary {
+        background:linear-gradient(180deg, #fffdfa 0%, #f6ecd7 100%);
+        color:#3c2c12; border:1px solid rgba(140,106,26,.12);
+        box-shadow:0 12px 24px rgba(17,12,0,.08);
+      }
+      .menu-toggle { display:none; }
+      .hero-grid { grid-template-columns:1fr 1fr; gap:30px; align-items:stretch; }
+      .hero-card { min-height:700px; padding:30px; }
+      .hero-watermark { width:920px; top:-9%; opacity:.1; }
+      .guide-grid { grid-template-columns:repeat(4, 1fr); }
+      .proof-grid { grid-template-columns:1fr; align-items:start; gap:22px; }
+      .results-head { grid-template-columns:minmax(0, 1.08fr) minmax(320px, .92fr); align-items:center; gap:28px; }
+      .ba-grid { grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; }
+      .ba-card { padding:18px; border-radius:30px; }
+      .ba-card h3 { font-size:1.2rem; }
+      .ba-card p { font-size:.95rem; }
+      .before-after { margin-top:16px; aspect-ratio:4/5.35; border-radius:24px; }
+      .before-after .handle { width:52px; height:52px; font-size:.92rem; }
+      .b2b-grid { grid-template-columns:1fr 1fr; gap:24px; }
+      .footer-grid { grid-template-columns:minmax(260px,.95fr) minmax(260px,1.05fr); align-items:start; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Bee Cosmetics">
+        <img class="brand-logo" src="logos/bee-logo-official.svg" alt="Bee Cosmetics" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <strong class="brand-fallback">Bee Cosmetics</strong>
+        <span class="brand-text">
+          <small>Cuidado premium para cabelos com curvatura</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#catalogo">Produtos</a>
+        <a href="#guia">Guia Bee</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#b2b">B2B</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-secondary desktop-only" href="#catalogo">Explorar catálogo</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobilePanel" hidden>
+    <nav aria-label="Menu mobile">
+      <a href="#catalogo">Produtos</a>
+      <a href="#guia">Guia Bee</a>
+      <a href="#resultados">Resultados reais</a>
+      <a href="#b2b">Parcerias B2B</a>
+      <a href="#faq">Perguntas frequentes</a>
+      <a class="btn btn-dark" href="#b2b">Atendimento B2B</a>
+    </nav>
+  </div>
+
+  <main id="conteudo">
+    <section class="section hero" id="topo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-signature"><span class="eyebrow">Bee Cosmetics</span></div>
+          <h1 class="title-xl" style="margin-top:16px;">Saúde do fio em primeiro lugar. <em>Beleza como consequência.</em></h1>
+          <p class="lead" style="margin-top:22px; max-width:720px;">
+            A Bee Cosmetics reúne 10 produtos veganos, ricos em ingredientes naturais e livres de sulfato, parabenos, petrolato, parafina e corantes. Uma linha pensada para cabelos ondulados, cacheados e crespos que valoriza limpeza suave, tratamento consistente e finalização com identidade — sempre com foco no bem-estar dos fios.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">Ver catálogo completo</a>
+            <button class="btn btn-secondary" type="button" data-open-market>Onde comprar</button>
+          </div>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">vegano</span>
+            <span class="pill">ingredientes naturais</span>
+            <span class="pill">no poo e low poo</span>
+            <span class="pill ghost">10 produtos</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-watermark" aria-hidden="true">
+            <img src="logos/bee-icon-official.svg" alt="" onerror="this.remove()">
+          </div>
+          <div class="hero-panel">
+            <span class="eyebrow" style="color:#f2d48f;">Cuidado que respeita a curvatura</span>
+            <h2 class="title-md" style="margin-top:14px;">Uma rotina sofisticada começa com fórmulas que respeitam a natureza do fio.</h2>
+            <p>
+              Cada fórmula Bee tem uma função clara dentro da rotina: limpar sem ressecar, tratar com profundidade e finalizar sem pesar. O resultado visual fica mais bonito justamente porque o fio recebe o cuidado que precisa.
+            </p>
+            <div class="hero-metrics">
+              <div class="metric">
+                <strong>Limpeza suave</strong>
+                <span>Shampoo low poo e co-wash para diferentes momentos da rotina.</span>
+              </div>
+              <div class="metric">
+                <strong>Tratamento inteligente</strong>
+                <span>Nutrição, reconstrução, umectação e acidificação com leitura simples.</span>
+              </div>
+              <div class="metric">
+                <strong>Finalização com personalidade</strong>
+                <span>Mais definição, leveza ou antiencolhimento conforme o efeito desejado.</span>
+              </div>
+              <div class="metric">
+                <strong>Compra prática</strong>
+                <span>Escolha com clareza e finalize a compra com poucos cliques.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container education-grid">
+        <article class="surface-card">
+          <span class="eyebrow">O que torna a Bee especial</span>
+          <h2 class="title-lg" style="margin-top:14px;">Uma linha pensada para cuidar dos fios com delicadeza e constância.</h2>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-item__num">1</span>
+              <div>
+                <strong>Fórmulas alinhadas a uma rotina mais gentil</strong>
+                <p>Os produtos foram desenvolvidos para quem busca uma relação mais equilibrada com os fios, especialmente dentro das propostas no poo e low poo.</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-item__num">2</span>
+              <div>
+                <strong>Ingredientes que tratam enquanto acompanham a textura natural</strong>
+                <p>O foco está em maciez, brilho, controle do frizz, retenção de hidratação e melhor resposta do cabelo ao longo da rotina.</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-item__num">3</span>
+              <div>
+                <strong>Educação de compra</strong>
+                <p>Mais do que escolher um frasco bonito, a proposta é entender o papel de cada produto para montar uma rotina coerente com a necessidade do seu fio.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface-card">
+          <span class="eyebrow">Para quem a Bee foi criada</span>
+          <h2 class="title-lg" style="margin-top:14px;">Para quem quer fios saudáveis, bonitos e com movimento real.</h2>
+          <p class="lead" style="margin-top:14px;">
+            A linha Bee Cosmetics conversa especialmente com cabelos ondulados, cacheados e crespos. É ideal para quem valoriza fórmulas livres de proibidos, prefere um cuidado mais consciente e entende que a estética mais bonita costuma nascer de um fio nutrido, equilibrado e bem tratado.
+          </p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">ondulados</span>
+            <span class="pill">cacheados</span>
+            <span class="pill">crespos</span>
+            <span class="pill ghost">uso diário</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="container">
+        <span class="eyebrow">Catálogo Bee</span>
+        <h2 class="title-lg" style="margin-top:14px;">Descubra a linha ideal para cada etapa do seu cuidado.</h2>
+        <p class="lead" style="margin-top:14px; max-width:860px;">
+          O catálogo foi pensado para tornar a escolha mais intuitiva. Cada produto revela sua função, seus diferenciais e a melhor forma de uso, para que você encontre com tranquilidade o cuidado mais coerente para o seu cabelo.
+        </p>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" type="button" data-filter="all">Toda a linha</button>
+          <button class="filter-btn" type="button" data-filter="limpeza">Limpeza</button>
+          <button class="filter-btn" type="button" data-filter="tratamento">Tratamento</button>
+          <button class="filter-btn" type="button" data-filter="finalizacao">Finalização</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="guia">
+      <div class="container">
+        <span class="eyebrow">Guia Bee</span>
+        <h2 class="title-lg" style="margin-top:14px;">Um jeito simples de entender por onde começar.</h2>
+        <div class="guide-grid">
+          <article class="guide-card">
+            <span class="step">1</span>
+            <h3>Limpe respeitando o fio</h3>
+            <p>Born to BEE funciona muito bem para quem busca limpeza low poo. Feel the BEEat é uma ótima escolha para rotinas no poo e para quem gosta de suavidade desde o início.</p>
+          </article>
+          <article class="guide-card">
+            <span class="step">2</span>
+            <h3>Trate conforme a necessidade</h3>
+            <p>Nutrição, reconstrução, umectação e acidificação cumprem papéis diferentes. Quando cada etapa é usada com intenção, o cabelo responde melhor e ganha mais equilíbrio.</p>
+          </article>
+          <article class="guide-card">
+            <span class="step">3</span>
+            <h3>Finalize pelo efeito desejado</h3>
+            <p>Mais definição, leveza natural ou antiencolhimento: a finalização pode ser escolhida de acordo com o visual que você quer construir naquele momento.</p>
+          </article>
+          <article class="guide-card">
+            <span class="step">4</span>
+            <h3>Observe a resposta do cabelo</h3>
+            <p>O cuidado mais bonito é aquele que respeita o comportamento real dos fios. A Bee foi pensada para acompanhar esse processo com consistência e leveza.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="surface-card">
+          <div class="results-head">
+            <div class="results-copy">
+              <span class="eyebrow">Resultados reais</span>
+              <h2 class="title-lg" style="margin-top:6px;">Resultados que revelam textura, brilho e uma rotina mais bem conduzida.</h2>
+              <p class="lead" style="margin-top:16px;">
+                Os comparativos ajudam a visualizar como uma rotina mais bem escolhida pode favorecer definição, brilho e maciez visual, sempre respeitando a identidade natural de cada curvatura.
+              </p>
+              <p class="lead" style="margin-top:12px;">Arraste a seta sobre cada imagem para comparar.</p>
+            </div>
+            <!-- Troque apenas o arquivo logos/resultados-brand.svg para mudar esta marca sem editar o HTML -->
+            <div class="results-mark" aria-hidden="true">
+              <img src="logos/resultados-brand.svg" alt="" onerror="this.style.display='none'">
+            </div>
+          </div>
+
+          <div class="ba-grid" style="margin-top:28px;">
+            <article class="ba-card">
+              <h3>Mais definição</h3>
+              <p>Leitura mais precisa dos cachos e acabamento uniforme.</p>
+              <div class="before-after" data-before-after>
+                <img src="results/before-after-01-before.webp" alt="Antes do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')">
+                <div class="after-wrap"><img src="results/before-after-01-after.webp" alt="Depois do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')"></div>
+                <div class="divider"></div>
+                <div class="handle">↔</div>
+                <div class="ba-labels"><span>Antes</span><span>Depois</span></div>
+                <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+              </div>
+            </article>
+            <article class="ba-card">
+              <h3>Mais brilho</h3>
+              <p>Fios mais alinhados, luminosos e com aparência saudável.</p>
+              <div class="before-after" data-before-after>
+                <img src="results/before-after-02-before.webp" alt="Antes do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')">
+                <div class="after-wrap"><img src="results/before-after-02-after.webp" alt="Depois do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')"></div>
+                <div class="divider"></div>
+                <div class="handle">↔</div>
+                <div class="ba-labels"><span>Antes</span><span>Depois</span></div>
+                <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+              </div>
+            </article>
+            <article class="ba-card">
+              <h3>Mais maciez</h3>
+              <p>Toque suave, menos frizz e movimento mais natural.</p>
+              <div class="before-after" data-before-after>
+                <img src="results/before-after-03-before.webp" alt="Antes do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')">
+                <div class="after-wrap"><img src="results/before-after-03-after.webp" alt="Depois do tratamento Bee Cosmetics" loading="lazy" onerror="this.style.display='none'; this.closest('.before-after').classList.add('is-fallback')"></div>
+                <div class="divider"></div>
+                <div class="handle">↔</div>
+                <div class="ba-labels"><span>Antes</span><span>Depois</span></div>
+                <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="b2b">
+      <div class="container">
+        <div class="b2b-shell">
+          <div class="b2b-grid">
+            <article class="b2b-panel">
+              <span class="eyebrow" style="color:#f2d48f;">Parcerias Bee</span>
+              <h2 class="title-lg" style="margin-top:14px; color:#fff;">Revenda, lojas e salão</h2>
+              <p style="margin-top:14px; line-height:1.82;">
+                Se você deseja trabalhar com a Bee Cosmetics no seu negócio, este espaço foi criado para tornar o primeiro contato mais objetivo. Preencha o formulário com as informações principais e a mensagem será direcionada ao WhatsApp comercial.
+              </p>
+              <ul class="b2b-points">
+                <li>Indique se o interesse é para revenda, loja física, e-commerce, salão ou multimarcas.</li>
+                <li>Informe cidade, estado e estrutura do negócio para facilitar a continuidade da conversa.</li>
+                <li>Descreva o estágio do interesse: conhecer a linha, receber catálogo, condições comerciais ou implantação.</li>
+              </ul>
+              <div class="contact-inline">E-mail comercial: <strong>contato@beecosmetics.store</strong></div>
+            </article>
+
+            <div class="b2b-panel">
+              <span class="eyebrow" style="color:#f2d48f;">Formulário B2B</span>
+              <div class="b2b-form">
+                <form id="b2bForm">
+                  <div class="form-grid two">
+                    <div>
+                      <label for="nome">Nome</label>
+                      <input id="nome" name="nome" type="text" required>
+                    </div>
+                    <div>
+                      <label for="empresa">Empresa ou salão</label>
+                      <input id="empresa" name="empresa" type="text" required>
+                    </div>
+                  </div>
+                  <div class="form-grid two" style="margin-top:12px;">
+                    <div>
+                      <label for="tipo">Perfil</label>
+                      <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                        <option>Revenda</option>
+                        <option>Loja física</option>
+                        <option>E-commerce</option>
+                        <option>Salão</option>
+                        <option>Loja multimarcas</option>
+                        <option>Distribuição</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="telefone">WhatsApp</label>
+                      <input id="telefone" name="telefone" type="text" required>
+                    </div>
+                  </div>
+                  <div class="form-grid two" style="margin-top:12px;">
+                    <div>
+                      <label for="cidade">Cidade</label>
+                      <input id="cidade" name="cidade" type="text" required>
+                    </div>
+                    <div>
+                      <label for="estado">Estado</label>
+                      <input id="estado" name="estado" type="text" required>
+                    </div>
+                  </div>
+                  <div class="form-grid two" style="margin-top:12px;">
+                    <div>
+                      <label for="canal">Canal principal de venda</label>
+                      <input id="canal" name="canal" type="text" placeholder="Loja física, Instagram, site, WhatsApp...">
+                    </div>
+                    <div>
+                      <label for="interesse">Interesse inicial</label>
+                      <select id="interesse" name="interesse" required>
+                        <option value="">Selecione</option>
+                        <option>Conhecer a linha</option>
+                        <option>Receber catálogo</option>
+                        <option>Condições comerciais</option>
+                        <option>Uso profissional em salão</option>
+                        <option>Implantação em loja</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div style="margin-top:12px;">
+                    <label for="mensagem">Conte um pouco sobre o seu negócio</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Fale sobre seu momento, público, estrutura e o que busca com a Bee."></textarea>
+                  </div>
+                  <div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:12px;">
+                    <button class="btn btn-primary" type="submit">Enviar para o WhatsApp</button>
+                  </div>
+                  <p class="form-note">Para contato por e-mail, use também <strong>contato@beecosmetics.store</strong>.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 class="title-lg" style="margin-top:14px;">Respostas que ajudam a escolher com mais clareza.</h2>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>Bee Cosmetics é compatível com rotinas no poo e low poo?</summary>
+            <p>Sim. O shampoo Born to BEE atende à proposta low poo, enquanto o co-wash Feel the BEEat é uma ótima opção para rotinas no poo. Os demais produtos complementam ambas as propostas de cuidado.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Como escolher entre os leave-ins?</summary>
+            <p>BEE Yourself é ideal para quem busca mais definição, Let it BEE entrega leveza natural e BEE Proud ajuda a reduzir o fator encolhimento. A melhor escolha depende do efeito que você deseja na finalização.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Em que momento entra o acidificante?</summary>
+            <p>O BEElieve in Acid entra após a limpeza e antes da máscara, ajudando a equilibrar o pH, selar cutículas e preparar os fios para um tratamento mais profundo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Posso comprar a Bee online?</summary>
+            <p>Sim. O site funciona como vitrine da linha e direciona a compra para marketplaces parceiros por meio de um modal simples e direto.</p>
+          </details>
+        </div>
+
+        <div class="cta-final" style="margin-top:30px;">
+          <span class="eyebrow">Bee Cosmetics</span>
+          <h3 class="title-md" style="margin-top:14px;">Conheça a linha e escolha sua rotina com mais confiança.</h3>
+          <p class="lead" style="margin:14px auto 0; max-width:760px;">
+            Explore o catálogo, leia a ficha completa de cada produto e siga para os marketplaces parceiros quando quiser concluir a compra.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+            <button class="btn btn-secondary" type="button" data-open-market>Onde comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logos/bee-logo-footer.svg" alt="Bee Cosmetics" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <strong class="footer-brand-fallback">Bee Cosmetics</strong>
+        <p>
+          Cosméticos veganos, ricos em ingredientes naturais e livres de sulfato, parabenos, petrolato, parafina e corantes. Uma linha pensada para cabelos com curvatura, com foco em cuidado real do fio.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <a href="#catalogo">Produtos</a>
+          <a href="#guia">Guia Bee</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#b2b">B2B</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <span>contato@beecosmetics.store</span>
+          <span>Compra finalizada nos marketplaces parceiros</span>
+          <span>Atendimento B2B pelo formulário da página</span>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Bee Cosmetics. Todos os direitos reservados.</span>
+      <strong>Cabelo saudável em primeiro lugar.</strong>
+    </div>
+  </footer>
+
+  <div class="modal" id="marketModal" aria-hidden="true" role="dialog" aria-labelledby="marketModalTitle">
+    <div class="modal-dialog market-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar">✕</button>
+      <div class="modal-content market-minimal">
+        <div class="market-header">
+          <div class="market-logo">
+            <img src="logos/bee-logo-official.svg" alt="Bee Cosmetics" onerror="this.style.display='none'">
+          </div>
+          <div class="market-brandline">
+            <span class="eyebrow">Onde comprar</span>
+          </div>
+          <h2 class="title-md" id="marketModalTitle" style="margin-top:10px;">Escolha seu marketplace.</h2>
+          <p>Você será direcionada para uma loja parceira oficial da Bee Cosmetics.</p>
+        </div>
+        <div class="market-list">
+          <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="mercado-livre">
+            <span class="market-icon"><img src="icons/mercado-livre.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>ML</span>'"></span>
+            <div><strong>Mercado Livre</strong><small>Compra rápida</small></div>
+            <span class="btn btn-primary">Ir</span>
+          </a>
+          <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="amazon">
+            <span class="market-icon"><img src="icons/amazon.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>AM</span>'"></span>
+            <div><strong>Amazon</strong><small>Checkout prático</small></div>
+            <span class="btn btn-primary">Ir</span>
+          </a>
+          <a class="market-item" href="#" target="_blank" rel="noopener" data-market-link="shopee">
+            <span class="market-icon"><img src="icons/shopee.svg" alt="" onerror="this.style.display='none'; this.parentElement.innerHTML='<span>SP</span>'"></span>
+            <div><strong>Shopee</strong><small>Mais uma opção</small></div>
+            <span class="btn btn-primary">Ir</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-labelledby="productModalTitle">
+    <div class="modal-dialog" style="width:min(100%, 1040px); max-height:min(92vh, 900px);">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fechar">✕</button>
+      <div class="modal-content" id="productModalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const PRODUCTS = [
+      {id:'born-to-bee', name:'Born to BEE', category:'Shampoo Sem Sulfato', size:'300 ml / 10.14 fl.oz', ph:'pH 4,5', anvisa:'25351.459676/2022-71', barcode:'7899085798567', actives:'Extrato de Aloe Vera, Vitamina B12, Hydra Repair (Blend Especial)', description:'Limpeza eficaz sem ressecar ou agredir os fios. Ideal para uma limpeza suave, com sensorial confortável e desembaraço facilitado.', full_description:'Tenha uma limpeza eficaz sem ressecar ou agredir os fios. Nosso Shampoo Sem Sulfato Born to BEE, com limpante natural, deixa o cabelo limpo e hidratado, perfeito para adeptas de técnicas com limpeza suave.', usage:'Aplique no cabelo molhado, massageando suavemente o couro cabeludo em movimentos circulares. Enxágue bem. Repita se necessário.', composition:'Água Deionizada, Lauril Sulfosucinato de Sódio, Cocoamidopropil Betaína, Dietanolamida de Ácidos Graxos de Côco, Fragrância, Poliquatérnio-39, Hidroxietil Uréia, Extrato de Babosa, Cloreto de Guar Hidroxipropiltrimônio, Distearato do PEG-150, Poliquatérnio-22, Poliquatérnio-55, Poliquatérnio-47, Metilglucose Eter do PPG-20, Glicerina, Álcool Benzílico, Clorfenesina, EDTA Dissódico, Metilcloroisotiazolinona, Metilisotiazolinona, Aldeído Hexil Cinâmico, Salicilato de Benzila, Linalol, Geraniol.', kind:'limpeza', tag:'low poo', image:'products/born-to-bee.webp'},
+      {id:'feel-the-beeat', name:'Feel the BEEat', category:'Co-Wash', size:'300 ml / 10.14 fl.oz', ph:'pH 4,5', anvisa:'25351.459590/2022-48', barcode:'7899085798611', actives:'Extrato de Aloe Vera, Manteiga de Oliva, Hydra Repair (Blend Especial), Queratina', description:'Limpa, condiciona, hidrata e repara em um só passo. Excelente para rotinas no poo e para quem quer suavidade desde a limpeza.', full_description:'Um produto completo que limpa, condiciona, hidrata e repara os fios. Com aloe vera, manteiga de oliva e queratina, é ideal para quem segue uma rotina mais suave e delicada.', usage:'Aplique nos cabelos molhados, massageando o couro cabeludo e distribuindo pelo comprimento. Enxágue bem. Repita se necessário.', composition:'Água Deionizada, Cocoamidopropil Betaina, Álcool Cetoestarílico, Álcool Cetílico, Cloreto de Cetrimônio, Cloreto de Berrentrimômio, Fragrância, Poliquatérnio-39, Poliquatérnio-22, Poliquatérnio-47, Poliquatérnio-55, Metilglucose Eter do PPG-20, Glicerina, Álcool Benzílico, Clorfenesina, Queratina Hidrolizada, Manteiga de Oliva, Extrato de Babosa, Cloreto de Guar Hidroxipropiltrimônio, Fenoxietanol, Ácido Lático, EDTA Dissódico.', kind:'limpeza', tag:'no poo', image:'products/feel-the-beeat.webp'},
+      {id:'beetween-gardens', name:'BEEtween Gardens', category:'Máscara de Nutrição', size:'300 g / 10.58 oz', ph:'pH 4,0', anvisa:'25351.459556/2022-73', barcode:'7899085798598', actives:'Manteiga de Abacate, Óleo de Coco, D-Pantenol (Vitamina B5)', description:'Hidratação e nutrição no mesmo produto, com emoliência, maciez e ajuda no controle do frizz.', full_description:'Uma máscara que entrega hidratação e nutrição em equilíbrio, com toque mais macio e aparência mais cuidada para os fios.', usage:'Aplique após a limpeza, enluvando as mechas. Deixe agir por 10 minutos e enxágue.', composition:'Água Deionizada, Cloreto de Berrentrimônio, Álcool Cetoestarílico, Álcool Cetílico, Cloreto de Cetrimônio, Metosulfato de Berrentrimônio, Fragrância, Glicerina, Poliquatérnio-39, Vitamina B5, Óleo de Coco, Manteiga de Abacate, Hidroxietilcelulose, Fenoxietanol, Ácido Lático, EDTA Dissódico.', kind:'tratamento', tag:'hidratação + nutrição', image:'products/beetween-gardens.webp'},
+      {id:'after-beeach', name:'After BEEach', category:'Máscara de Reconstrução', size:'300 g / 10.58 oz', ph:'pH 4,0', anvisa:'25351.459709/2022-82', barcode:'7899085798574', actives:'Manteiga de Oliva, Proteína do Trigo, Recovery Hair Pro', description:'Reparo intensivo para fios danificados por coloração, químicas, sol ou mar.', full_description:'Uma máscara de reconstrução pensada para devolver força, melhorar o toque e acompanhar fios que passaram por processos de desgaste.', usage:'Aplique após a limpeza, enluvando as mechas. Deixe agir por 10 minutos e enxágue.', composition:'Água Deionizada, Cloreto de Berrentrimônio, Álcool Cetoestarílico, Álcool Cetílico, Cloreto de Cetrimônio, Metosulfato de Berrentrimônio, Fragrância, Glicerina, Poliquatérnio-39, Poliquatérnio-10, Polióxido de Etileno 90 M, Proteína Hidrolisada de Arroz, Carbocisteína, Serina, Ácido Glutâmico, Manteiga de Oliva, Vitamina E, Fenoxietanol, EDTA Dissódico.', kind:'tratamento', tag:'reconstrução', image:'products/after-beeach.webp'},
+      {id:'beeloved-oil', name:'BEEloved Oil', category:'Máscara de Umectação', size:'300 g / 10.58 oz', ph:'pH 4,0', anvisa:'25351.459606/2022-12', barcode:'7899085798581', actives:'Óleo de Coco, Óleo de Linhaça, Manteiga de Oliva, Cera de Arroz', description:'Umectação profunda com toque macio, fortalecimento e hidratação para ondulados, cacheados e crespos.', full_description:'Uma combinação nutritiva que envolve os fios com conforto, maciez e aparência mais saudável.', usage:'Aplique após a limpeza, enluvando as mechas. Deixe agir por 10 minutos e enxágue.', composition:'Água Deionizada, Cloreto de Berrentrimônio, Álcool Cetoestarílico, Álcool Cetílico, Cloreto de Cetrimônio, Metosulfato de Berrentrimônio, Fragrância, Glicerina, Poliquatérnio-39, Cera de Arroz, Óleo de Coco, Óleo de Linhaça, Manteiga de Oliva, Hidroxietilcelulose, Fenoxietanol, Ácido Lático, EDTA Dissódico.', kind:'tratamento', tag:'umectação', image:'products/beeloved-oil.webp'},
+      {id:'bee-yourself', name:'BEE Yourself', category:'Leave-in Super Definição', size:'300 ml / 10.14 fl.oz', ph:'pH 4,0', anvisa:'25351.459723/2022-86', barcode:'7899085798635', actives:'Manteiga de Abacate, Proteína do Trigo, Recovery Hair Pro', description:'Definição intensa com brilho, condicionamento, retenção de água e redução de porosidade.', full_description:'Perfeito para quem busca mais definição, brilho e acabamento com presença, sem abrir mão do cuidado.', usage:'Aplique nos fios úmidos, distribua com a técnica de finalização de sua preferência e siga com difusor ou secagem natural.', composition:'Água Deionizada, Metosulfato de Berrentrimônio, Álcool Cetoestarílico, Álcool Cetílico, Cloreto de Cetrimônio, Cloreto de Berrentrimônio, Fragrância, Polióxido de Etilleno 90 M, Poliquatérnio–39, Hidroxietilcelulose, Manteiga de Abacate, Proteína Hidrolizada do Trigo, Fenoxietanol, Ácido Lático, EDTA Dissódico.', kind:'finalizacao', tag:'super definição', image:'products/bee-yourself.webp'},
+      {id:'let-it-bee', name:'Let it BEE', category:'Leave-in Leveza Natural', size:'300 ml / 10.14 fl.oz', ph:'pH 4,0', anvisa:'25351.459688/2022-03', barcode:'7899085798628', actives:'Manteiga de Karité, Óleo de Amêndoas, Recovery Hair Pro', description:'Brilho e fixação suave para uma definição leve, elegante e com day after favorecido.', full_description:'Uma finalização leve, confortável e luminosa para quem prefere movimento natural e toque suave.', usage:'Aplique nos fios úmidos e modele com as mãos. Finalize ao natural ou com difusor.', composition:'Água Deionizada, Álcool Cetoestearílico, Álcool Cetílico, Metasulfato de Berrentrimônio, Cloreto de Cetrimônio, Cloreto de Berrentrimônio, Fragrância, Manteiga de Karité, Poliquatérnio-39, Hidroxietilcelulose, Óleo de Amêndoas Doce, Fenoxietanol, Ácido Lático, EDTA Dissódico.', kind:'finalizacao', tag:'leveza natural', image:'products/let-it-bee.webp'},
+      {id:'bee-proud', name:'BEE Proud', category:'Leave-in Antiencolhimento', size:'300 ml / 10.14 fl.oz', ph:'pH 4,0', anvisa:'25351.459582/2022-00', barcode:'7899085798642', actives:'Manteiga de Oliva, Óleo de Algodão, Liss Repair (Blend Especial)', description:'Ajuda a prevenir o fator encolhimento, mantendo fios bonitos, saudáveis e com menos frizz.', full_description:'Ideal para quem gosta de alongamento visual da curvatura e quer um resultado mais controlado e elegante.', usage:'Aplique nos fios úmidos, distribua bem e finalize da forma desejada.', composition:'Água Deionizada, Álcool Cetoestarílico, Álcool Cetílico, Metosulfato de Berrentrimônio, Cloreto de Berrentrimônio, Cloreto de Cetrimônio, Fragrância, Poliquatérnio–39, Manteiga de Oliva, Óleo de Algodão, Acetamida Mea, Berrenamidopropil Dimetilamina, Ácido Glutâmico, Ácido Lático.', kind:'finalizacao', tag:'antiencolhimento', image:'products/bee-proud.webp'},
+      {id:'be-my-bee', name:'Be my BEE', category:'Gelatina Capilar', size:'300 g / 10.58 oz', ph:'pH 4,0', anvisa:'25351.459703/2022-13', barcode:'7899085798604', actives:'Extrato de Aloe Vera, Extrato de Cana de Açúcar, Vitaminas B12', description:'Fixação com estilo, hidratação e retenção de umidade para fios macios e brilhosos.', full_description:'Uma gelatina para reforçar definição e fixação com toque mais agradável e aparência hidratada.', usage:'Aplique após o leave-in e amasse os fios para ativar a curvatura.', composition:'Água Deionizada, Fragrância, Carbômero, Aminometil Propanol, Glicerina, Extrato de Aloe Vera, Extrato de Mel, PVP, Fenoxietanol, EDTA Dissódico.', kind:'finalizacao', tag:'gelatina', image:'products/be-my-bee.webp'},
+      {id:'beelieve-in-acid', name:'BEElieve in Acid', category:'Elixir Acidificante', size:'140 ml / 4.74 fl.oz', ph:'pH 3,5', anvisa:'não informado', barcode:'7899085798659', actives:'Bioacetum Maçã, Betacaroteno, Potássio', description:'Equilibra o pH, sela as cutículas, intensifica o brilho e prepara o cabelo para tratamentos mais profundos.', full_description:'Um acidificante que ajuda a reorganizar o fio, melhorar o brilho e preparar o cabelo para uma etapa de tratamento mais rica.', usage:'Aplique após a limpeza, deixe agir por alguns minutos e enxágue antes da máscara.', composition:'Água Purificada, Vinagre, Extrato de Maçã, Frutose, Glicose, Ácido Glucônico, Gliconolactona, Goma de Falso Pau Brasil, Fragrância, Propilenoglicol, Fenoxietanol.', kind:'tratamento', tag:'acidificação', image:'products/beelieve-in-acid.webp'}
+    ];
+
+    const MARKET_LINKS = {
+      'mercado-livre': '#',
+      'amazon': '#',
+      'shopee': '#'
+    };
+
+    const productsGrid = document.getElementById('productsGrid');
+    const productModal = document.getElementById('productModal');
+    const productModalContent = document.getElementById('productModalContent');
+    const marketModal = document.getElementById('marketModal');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobilePanel = document.getElementById('mobilePanel');
+    let scrollPosition = 0;
+    let openModalCount = 0;
+
+    function renderProducts(filter = 'all') {
+      const list = PRODUCTS.filter(product => filter === 'all' || product.kind === filter);
+      productsGrid.innerHTML = list.map(product => `
+        <article class="product-card" data-kind="${product.kind}">
+          <div class="product-media">
+            <img src="${product.image}" alt="${product.category} ${product.name}" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('is-fallback')">
+            <div class="product-bottle" aria-hidden="true"><span>${product.name}</span></div>
+          </div>
+          <div>
+            <div class="product-meta">${product.category}</div>
+            <h3 style="margin-top:8px;">${product.name}</h3>
+            <p style="margin-top:12px;">${product.description}</p>
+            <div class="pill-row" style="margin-top:14px;">
+              <span class="pill">${product.tag}</span>
+              <span class="pill ghost">${product.ph}</span>
+            </div>
+            <div class="product-footer">
+              <button class="btn btn-dark" type="button" data-open-product="${product.id}">Ver ficha completa</button>
+              <button class="btn btn-primary" type="button" data-open-market>Onde comprar</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function buildProductModal(product) {
+      productModalContent.innerHTML = `
+        <div class="product-modal-grid">
+          <div class="product-shot">
+            <img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.parentElement.classList.add('is-fallback')">
+            <div class="product-bottle" aria-hidden="true"><span>${product.name}</span></div>
+          </div>
+          <div>
+            <span class="eyebrow">Ficha completa</span>
+            <h2 class="title-lg" id="productModalTitle" style="margin-top:14px;">${product.name}</h2>
+            <p class="lead" style="margin-top:12px;">${product.full_description}</p>
+            <div class="spec-grid">
+              <div class="spec"><span>Categoria</span><strong>${product.category}</strong></div>
+              <div class="spec"><span>Tamanho</span><strong>${product.size}</strong></div>
+              <div class="spec"><span>pH</span><strong>${product.ph}</strong></div>
+              <div class="spec"><span>Ativos</span><strong>${product.actives}</strong></div>
+              <div class="spec"><span>ANVISA</span><strong>${product.anvisa}</strong></div>
+              <div class="spec"><span>Código de barras</span><strong>${product.barcode}</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-block" style="margin-top:18px;">
+          <h3>Como usar</h3>
+          <p>${product.usage}</p>
+        </div>
+        <div class="detail-block" style="margin-top:14px;">
+          <h3>Composição</h3>
+          <p>${product.composition}</p>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:18px;">
+          <button class="btn btn-primary" type="button" data-open-market>Onde comprar</button>
+        </div>
+      `;
+      openModal(productModal);
+    }
+
+    function lockBody() {
+      if (openModalCount === 0) {
+        scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        document.body.classList.add('modal-open');
+        document.body.style.top = `-${scrollPosition}px`;
+      }
+      openModalCount += 1;
+    }
+
+    function unlockBody() {
+      openModalCount = Math.max(0, openModalCount - 1);
+      if (openModalCount === 0) {
+        document.body.classList.remove('modal-open');
+        document.body.style.top = '';
+        const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = 'auto';
+        window.scrollTo(0, scrollPosition);
+        requestAnimationFrame(() => {
+          document.documentElement.style.scrollBehavior = previousScrollBehavior;
+        });
+      }
+    }
+
+    function openModal(modal, preserveLock = false) {
+      if (!modal || modal.classList.contains('open')) return;
+      if (!preserveLock) lockBody();
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeModal(modal, preserveLock = false) {
+      if (!modal || !modal.classList.contains('open')) return;
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      if (!preserveLock) unlockBody();
+    }
+
+    function switchToMarketModal() {
+      if (productModal.classList.contains('open')) {
+        closeModal(productModal, true);
+        openModal(marketModal, true);
+        return;
+      }
+      openModal(marketModal);
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(item => item.classList.remove('active'));
+        btn.classList.add('active');
+        renderProducts(btn.dataset.filter);
+      });
+    });
+
+    document.addEventListener('click', e => {
+      const openProduct = e.target.closest('[data-open-product]');
+      const openMarket = e.target.closest('[data-open-market]');
+      const closeBtn = e.target.closest('[data-close-modal]');
+
+      if (openProduct) {
+        const product = PRODUCTS.find(item => item.id === openProduct.dataset.openProduct);
+        if (product) buildProductModal(product);
+      }
+
+      if (openMarket) switchToMarketModal();
+
+      if (closeBtn) {
+        closeModal(closeBtn.closest('.modal'));
+      }
+
+      if (e.target.classList.contains('modal')) {
+        closeModal(e.target);
+      }
+    });
+
+    document.querySelectorAll('[data-market-link]').forEach(link => {
+      link.href = MARKET_LINKS[link.dataset.marketLink] || '#';
+    });
+
+    menuToggle?.addEventListener('click', () => {
+      const isOpen = mobilePanel.classList.toggle('open');
+      menuToggle.classList.toggle('active', isOpen);
+      mobilePanel.hidden = !isOpen;
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    mobilePanel?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobilePanel.classList.remove('open');
+        mobilePanel.hidden = true;
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.querySelectorAll('[data-before-after]').forEach(wrapper => {
+      const range = wrapper.querySelector('input[type="range"]');
+      const afterWrap = wrapper.querySelector('.after-wrap');
+      const divider = wrapper.querySelector('.divider');
+      const handle = wrapper.querySelector('.handle');
+      const update = value => {
+        afterWrap.style.width = `${value}%`;
+        divider.style.left = `${value}%`;
+        handle.style.left = `${value}%`;
+      };
+      update(range.value);
+      range.addEventListener('input', e => update(e.target.value));
+    });
+
+    document.getElementById('b2bForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      const data = new FormData(form);
+      const lines = [
+        'Olá! Tenho interesse comercial na Bee Cosmetics.',
+        '',
+        `Nome: ${data.get('nome') || ''}`,
+        `Empresa ou salão: ${data.get('empresa') || ''}`,
+        `Perfil: ${data.get('tipo') || ''}`,
+        `WhatsApp: ${data.get('telefone') || ''}`,
+        `Cidade/Estado: ${data.get('cidade') || ''} - ${data.get('estado') || ''}`,
+        `Canal principal de venda: ${data.get('canal') || ''}`,
+        `Interesse inicial: ${data.get('interesse') || ''}`,
+        `Mensagem: ${data.get('mensagem') || ''}`
+      ];
+      const text = encodeURIComponent(lines.join('\n'));
+      const phone = '5511999999999';
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank', 'noopener');
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (productModal.classList.contains('open')) closeModal(productModal);
+        if (marketModal.classList.contains('open')) closeModal(marketModal);
+      }
+    });
+
+    renderProducts();
+  </script>
+</body>
+</html>
