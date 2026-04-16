@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
+# Core public assets
+Allow: /icons/
+Allow: /logos/
+Allow: /products/
+Allow: /results/
+Allow: /og/
+Allow: /favicon.ico
+Allow: /site.webmanifest
+
+# Keep obvious private/system paths out if they ever exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
 Sitemap: https://beecosmetics.store/sitemap.xml
