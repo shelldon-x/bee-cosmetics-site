@@ -1,43 +1,149 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+
   "cleanUrls": true,
   "trailingSlash": false,
+
   "headers": [
-    {
-      "source": "/robots.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=3600" }
-      ]
-    },
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=3600" }
-      ]
-    },
-    {
-      "source": "/site.webmanifest",
-      "headers": [
-        { "key": "Content-Type", "value": "application/manifest+json; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+        { "key": "Permissions-Policy", "value": "geolocation=(), camera=(), microphone=(), payment=(), usb=(), midi=(), magnetometer=(), gyroscope=(), accelerometer=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-DNS-Prefetch-Control", "value": "on" }
+      ]
+    },
+    {
+      "source": "/assets/css/(.*).css",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Content-Type", "value": "text/css; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/assets/js/(.*).js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Content-Type", "value": "application/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Content-Type", "value": "application/javascript; charset=utf-8" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
+      ]
+    },
+    {
+      "source": "/products/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/results/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/logos/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/icons/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/og/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).(png|jpg|jpeg|webp|avif|svg|ico|gif)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).(woff|woff2|ttf|otf|eot)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/site.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
       ]
     }
   ],
+
   "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+
+    { "source": "/catalogo", "destination": "/#catalogo", "permanent": false },
+    { "source": "/catalog", "destination": "/#catalogo", "permanent": false },
+    { "source": "/produtos", "destination": "/#catalogo", "permanent": false },
+    { "source": "/shop", "destination": "/#catalogo", "permanent": false },
+    { "source": "/loja", "destination": "/#catalogo", "permanent": false },
+
+    { "source": "/parcerias", "destination": "/#b2b", "permanent": false },
+    { "source": "/b2b", "destination": "/#b2b", "permanent": false },
+    { "source": "/revenda", "destination": "/#b2b", "permanent": false },
+    { "source": "/atacado", "destination": "/#b2b", "permanent": false },
+
+    { "source": "/guia", "destination": "/#guia", "permanent": false },
+    { "source": "/rotina", "destination": "/#guia", "permanent": false },
+    { "source": "/resultados", "destination": "/#resultados", "permanent": false },
+    { "source": "/duvidas", "destination": "/#faq", "permanent": false },
+    { "source": "/faq", "destination": "/#faq", "permanent": false },
+
+    { "source": "/born-to-bee", "destination": "/#born-to-bee", "permanent": false },
+    { "source": "/feel-the-beeat", "destination": "/#feel-the-beeat", "permanent": false },
+    { "source": "/beetween-gardens", "destination": "/#beetween-gardens", "permanent": false },
+    { "source": "/after-beeach", "destination": "/#after-beeach", "permanent": false },
+    { "source": "/beeloved-oil", "destination": "/#beeloved-oil", "permanent": false },
+    { "source": "/bee-yourself", "destination": "/#bee-yourself", "permanent": false },
+    { "source": "/let-it-bee", "destination": "/#let-it-bee", "permanent": false },
+    { "source": "/bee-proud", "destination": "/#bee-proud", "permanent": false },
+    { "source": "/be-my-bee", "destination": "/#be-my-bee", "permanent": false },
+    { "source": "/beelieve-in-acid", "destination": "/#beelieve-in-acid", "permanent": false },
+
+    { "source": "/wa", "destination": "https://wa.me/5511992690486", "permanent": false },
+    { "source": "/whatsapp", "destination": "https://wa.me/5511992690486", "permanent": false }
   ]
 }

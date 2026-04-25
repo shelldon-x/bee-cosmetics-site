@@ -1,14 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME / CATÁLOGO -->
   <url>
     <loc>https://beecosmetics.store/</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://beecosmetics.store/og/og-home-bee.jpg</image:loc>
-      <image:title>Bee Cosmetics — Catálogo premium para cabelos com curvatura</image:title>
+      <image:title>Bee Cosmetics — Catálogo Premium para cabelos com curvatura</image:title>
+      <image:caption>Linha vegana sem sulfato, parabeno ou petrolato</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/born-to-bee.webp</image:loc>
+      <image:title>Born to BEE — Shampoo Sem Sulfato</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/feel-the-beeat.webp</image:loc>
+      <image:title>Feel the BEEat — Co-Wash</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/beetween-gardens.webp</image:loc>
+      <image:title>BEEtween Gardens — Máscara de Nutrição</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/after-beeach.webp</image:loc>
+      <image:title>After BEEach — Máscara de Reconstrução</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/beeloved-oil.webp</image:loc>
+      <image:title>BEEloved Oil — Máscara de Umectação</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/bee-yourself.webp</image:loc>
+      <image:title>BEE Yourself — Leave-in Super Definição</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/let-it-bee.webp</image:loc>
+      <image:title>Let it BEE — Leave-in Leveza Natural</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/bee-proud.webp</image:loc>
+      <image:title>BEE Proud — Leave-in Antiencolhimento</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/be-my-bee.webp</image:loc>
+      <image:title>Be my BEE — Gelatina Capilar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://beecosmetics.store/products/beelieve-in-acid.webp</image:loc>
+      <image:title>BEElieve in Acid — Elixir Acidificante</image:title>
     </image:image>
   </url>
+
+  <!-- ÂNCORAS PRINCIPAIS DA HOME (importantes pro Google entender estrutura) -->
+  <url>
+    <loc>https://beecosmetics.store/#catalogo</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://beecosmetics.store/#guia</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://beecosmetics.store/#resultados</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://beecosmetics.store/#b2b</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://beecosmetics.store/#faq</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
