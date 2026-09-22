@@ -1,19 +1,23 @@
-# Bee Cosmetics — proposta para revisão
-
-Site estático em HTML, CSS e JavaScript, preparado a partir do ZIP original fornecido pelo usuário. Esta pasta é uma cópia de trabalho; nada foi publicado.
+# Bee Cosmetics — arquivos prontos para revisão
 
 ```text
-index.html                  Home e catálogo
-produtos/<slug>/index.html  Dez páginas individuais
-assets/css/site.css         Estilos compartilhados
-assets/js/site.js           Menu móvel
-products/, results/         Imagens originais
-logos/, icons/, og/         Identidade e compartilhamento
-sitemap.xml, robots.txt     Descoberta e indexação
-site.webmanifest            Manifest simplificado
-vercel.json                 Configuração estática
+index.html                         Home, catálogo e rotina
+produtos/<slug>/index.html         Dez páginas individuais
+assets/css/site.css                Estilo compartilhado
+assets/js/site.js                  Menu móvel
+scripts/refresh-image-cache.cjs    Versionamento de imagens
+products/                          Fotos dos produtos
+results/, logos/, icons/, og/      Assets preservados
+robots.txt, sitemap.xml            SEO
+site.webmanifest, vercel.json      Configuração
 ```
 
-Textos, ativos, modos de uso e composições foram extraídos de `assets/js/bee.js` no snapshot. A composição foi transcrita em português; não é uma declaração INCI internacional validada. Veja `RELATORIO-AUDITORIA.md` na pasta acima para divergências que exigem revisão de rótulo.
+Os textos, INCI e modos de uso foram conferidos com os dez PDFs de rótulos fornecidos pelo usuário. Leia `RELATORIO-REVISAO-ROTULOS.md` na pasta acima antes de publicar, especialmente as pendências de fórmula e claims.
 
-Os CTAs preservam os destinos do projeto original. Amazon aponta para loja; Mercado Livre e Shopee para páginas gerais. Não foram inferidos preços, estoque ou anúncios individuais.
+Após alterar uma imagem de produto, execute na raiz deste projeto:
+
+```bash
+node scripts/refresh-image-cache.cjs
+```
+
+O comando atualiza as versões das URLs das imagens nas páginas. Faça commit/deploy dos HTML atualizados junto com as imagens. Nenhum deploy foi feito nesta entrega.
