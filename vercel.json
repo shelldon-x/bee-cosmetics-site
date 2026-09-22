@@ -64,12 +64,12 @@
     },
     {
       "source": "/rotina",
-      "destination": "/#rotina",
+      "destination": "/#catalogo",
       "permanent": false
     },
     {
       "source": "/guia",
-      "destination": "/#rotina",
+      "destination": "/#catalogo",
       "permanent": false
     },
     {

@@ -1,7 +1,7 @@
 # Bee Cosmetics — arquivos prontos para revisão
 
 ```text
-index.html                         Home, catálogo e rotina
+index.html                         Home e catálogo por etapa
 produtos/<slug>/index.html         Dez páginas individuais
 assets/css/site.css                Estilo compartilhado
 assets/js/site.js                  Menu móvel
@@ -12,7 +12,7 @@ robots.txt, sitemap.xml            SEO
 site.webmanifest, vercel.json      Configuração
 ```
 
-Os textos, INCI e modos de uso foram conferidos com os dez PDFs de rótulos fornecidos pelo usuário. Leia `RELATORIO-REVISAO-ROTULOS.md` na pasta acima antes de publicar, especialmente as pendências de fórmula e claims.
+Os textos e modos de uso foram conferidos com os dez PDFs de rótulos fornecidos pelo usuário. A composição aparece em português, com o INCI original disponível na página. Processo Anvisa e EAN-13 constam em cada ficha. Leia `RELATORIO-REVISAO-ROTULOS.md` na pasta acima antes de publicar, especialmente as pendências de fórmula e claims.
 
 Após alterar uma imagem de produto, execute na raiz deste projeto:
 
