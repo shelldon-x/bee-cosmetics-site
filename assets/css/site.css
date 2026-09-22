@@ -3,3 +3,21 @@
 .benefit-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}.benefit-list li{background:#f0e0bb;border:1px solid #d7bc84;border-radius:999px;padding:6px 14px;font-weight:700;font-size:.85rem}
 .category-group{padding-top:24px;margin-top:26px;scroll-margin-top:95px}.category-group+.category-group{border-top:1px solid var(--line);margin-top:60px;padding-top:50px}.category-heading{margin-bottom:25px}.category-heading h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2.1rem,4vw,3.2rem);margin:12px 0 8px}.category-heading p{color:var(--muted)}.stage-tag{display:inline-flex;width:max-content;align-items:center;border-radius:999px;background:#e8d6a9;color:#513814;padding:4px 12px;font-size:.68rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;margin-bottom:14px}.card-content .stage-tag{margin-bottom:18px}.identification dl{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0}.identification dt{font-size:.78rem;color:var(--muted);font-weight:700}.identification dd{margin:4px 0 0;font-weight:700;overflow-wrap:anywhere}.inci{margin-top:20px;border-top:1px solid var(--line);padding-top:16px}.inci summary{cursor:pointer;font-weight:700;color:#6b4a11}.inci p{font-size:.88rem;line-height:1.7}#catalogo,#marca,#resultados,#b2b{scroll-margin-top:80px}@media(max-width:650px){.identification dl{grid-template-columns:1fr}.category-group+.category-group{margin-top:44px;padding-top:34px}}
 #limpeza .cards{grid-template-columns:repeat(2,minmax(0,1fr));max-width:800px}@media(max-width:650px){#limpeza .cards{grid-template-columns:1fr}}
+
+/* Família Bee no hero e leitura das fichas de produto. */
+.hero{background:linear-gradient(180deg,#fbf7f0 0%,#fffaf2 100%)}
+.hero-grid{grid-template-columns:1fr;gap:38px;min-height:0;padding:clamp(48px,7vw,88px) 0 40px;text-align:center}
+.hero-grid>div:first-child{max-width:840px;margin-inline:auto}
+.hero .eyebrow{margin-bottom:18px}
+.hero h1{font-size:clamp(3.5rem,8vw,7rem);line-height:.93;margin-bottom:24px}
+.hero p{max-width:680px;margin-inline:auto;line-height:1.7}
+.hero .actions{justify-content:center}
+.hero-art{min-height:0;display:block;background:none;margin:0 auto;width:min(100%,1120px)}
+.hero-art img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;filter:none;mix-blend-mode:multiply}
+.specs{flex-wrap:wrap}
+.detail-grid>div:first-child>p,.lead{line-height:1.75}
+.detail-panel{padding:clamp(24px,3vw,36px)}
+.detail-panel p{line-height:1.8}
+#composicao>p{font-size:.94rem;line-height:1.9;overflow-wrap:normal;hyphens:auto}
+.faq details p{line-height:1.7;max-width:720px}
+@media(max-width:650px){.hero-grid{padding:48px 0 20px;gap:26px}.hero h1{font-size:clamp(3.3rem,13vw,5.2rem)}.hero-art{min-height:0}.hero-art img{max-height:none}.hero .actions{gap:10px}.specs{gap:8px}}
